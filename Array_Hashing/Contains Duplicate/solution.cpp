@@ -1,4 +1,4 @@
-                                          //  -- Contains Duplicate -- \\
+                                            //  -- Contains Duplicates -- \\
 
 class Solution {
 public:
