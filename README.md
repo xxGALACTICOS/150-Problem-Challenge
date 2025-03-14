@@ -1,2 +1,2 @@
 # 150-Problem-Challenge
-[Make it simple](https://neetcode.io/roadmap)
+[Solve questions here](https://neetcode.io/roadmap)
