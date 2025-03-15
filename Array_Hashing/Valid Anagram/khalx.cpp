@@ -23,29 +23,11 @@ bool isAnagram(string s, string t) {
 	sort(l.begin(), l.end());
 
 	if (l.size() == g.size()) {
-		for (int i = 0; i < g.size(); i++) {
-			
-			
-			if (g[i] == l[i]) {
-					
-				g[i] = 0;
-				l[i] = 0;
-				continue;
-				
-			}
-
-		}
-		for (int i = 0; i < g.size(); i++) {
-			if (g[i] != l[i]) {
-				return false;
-			}
-		}
+		if (g == l) {
 		return true;
-
+		}
 	}
 	
 	return false;
-
-
 
 }
