@@ -1,10 +1,8 @@
-#include<iostream>
-#include<algorithm>
-#include<string>
-using namespace std;
 
-
-bool isAnagram(string s, string t) {
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        	
 	sort(s.begin(), s.end());
 	sort(t.begin(), t.end());
 
@@ -12,4 +10,5 @@ bool isAnagram(string s, string t) {
 		return true;
 	}
 	return false;
-}
+    }
+};
