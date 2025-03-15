@@ -1,31 +1,15 @@
 #include<iostream>
-#include<vector>
 #include<algorithm>
+#include<string>
 using namespace std;
 
+
 bool isAnagram(string s, string t) {
-	
-	vector<char> g;
-	vector<char> l;
-	for (int i = 0; i < s.length(); i++)
-	{
-		g.push_back(s[i]);
+	sort(s.begin(), s.end());
+	sort(t.begin(), t.end());
 
+	if (s == t) {
+		return true;
 	}
-	sort(g.begin(), g.end());
-
-	for (int i = 0; i < t.length(); i++)
-	{
-		
-		l.push_back(t[i]);
-
-	}
-	sort(l.begin(), l.end());
-
-	if (g == l) {
-	return true;
-	}
-	
 	return false;
-
 }
