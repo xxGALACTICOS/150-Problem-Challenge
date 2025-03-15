@@ -22,10 +22,8 @@ bool isAnagram(string s, string t) {
 	}
 	sort(l.begin(), l.end());
 
-	if (l.size() == g.size()) {
-		if (g == l) {
-		return true;
-		}
+	if (g == l) {
+	return true;
 	}
 	
 	return false;
