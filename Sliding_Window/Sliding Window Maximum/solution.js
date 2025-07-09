@@ -11,12 +11,12 @@ class Solution {
         const res = [];
         let window = [];
         let r = 0;
-        let idxMax = -1;
+        // let idxMax = -1;
         for (; r < k; r++) {
             window.push(nums[r]);
             if (nums[r] > maxNum) {
                 maxNum = nums[r];
-                idxMax = r;
+                // idxMax = r;
             }
         }
         res.push(maxNum);
